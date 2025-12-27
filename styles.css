@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:last-child {
+    background-color: #f44336;
+}
+
+button:last-child:hover {
+    background-color: #da190b;
+}
+
+/* Estilos generales para la alerta */
+.alerta {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación para que la alerta se desvanezca */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo para la alerta de éxito */
+.alerta.exito {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para la alerta de error */
+.alerta.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/*-----------------------------------------------*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin: 20px;
+    text-align: center;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/*--------------------------------------------------*/
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #050505;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Fondo con opacidad */
+    padding-top: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Esto es importante para colocar el botón de cierre en la esquina */
+}
+
+/* Título del modal */
+.modal-content h3 {
+    font-size: 1.5rem;
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+/* Texto del modal */
+.modal-content p {
+    font-size: 1rem;
+    color: #080808;
+    margin: 10px 0;
+}
+
+/* Estilo del botón de cierre */
+.close {
+    color: #050505;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute; /* Posiciona el botón en la esquina superior derecha */
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+/* Estilos cuando el modal está visible */
+.modal.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación para el fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animación para el modal cuando se abre */
+.modal-content.show {
+    transform: translateY(20px);
+}
+
